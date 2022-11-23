@@ -18,4 +18,13 @@ describe Solver do
       expect(solver.reverse('ruby')).to eq('ybur')
     end
   end
+
+  context 'Testing Solver Class' do
+    it 'Should return a string when fizzbuzz method is called with an integer' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+  end
 end
